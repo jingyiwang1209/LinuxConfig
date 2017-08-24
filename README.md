@@ -1,4 +1,4 @@
-#Linux Configuration
+# Linux Configuration
 
 ### The Linux configuration project is about migrating WE-LOVE-CODING-APP project from local virtual environment to the Amazon remote virtual server.
 
@@ -28,7 +28,9 @@ Procedures:
 2. Download the LightsailDefaultPrivateKey file from Lightsail site into a local environment.
 
 3. Cd the directory where the LightsailDefaultPrivateKey file is located and ssh to the remote ubuntu system:
-    ```ssh ubuntu@52.37.81.230 -i LightsailDefaultPrivateKey-us-west-2.pem```
+    ```
+    ssh ubuntu@52.37.81.230 -i LightsailDefaultPrivateKey-us-west-2.pem
+    ```
 
 4. Add a new user called grader and give grader permission to sudo:
     ```
@@ -51,14 +53,18 @@ Procedures:
      nano .ssh/authorized_keys
      ```
     copy the public key from linux.pub(cat  /Users/*username*/.ssh/linux.pub) into the above file.
-    now it is supposed to login using ssh grader:
-     ```ssh grader@52.37.81.230 -p 2200 -i /Users/*username*/.ssh/linux```
+    Now it is supposed to login using ssh grader:
+     ```
+     ssh grader@52.37.81.230 -p 2200 -i /Users/*username*/.ssh/linux
+     ```
 
 
 
 6. Configure the local timezone to UTC:
     go to server side:
-     ```sudo dpkg-reconfigure tzdata```
+     ```
+     sudo dpkg-reconfigure tzdata
+     ```
     when the shell GUI comes up, select ```None of the above``` and then UTC.
 
 7. Install Apache and mod_wsgi to serve a Python mod_wsgi application:
@@ -77,8 +83,8 @@ Procedures:
     cd /var/www
     sudo mkdir catalog
     cd catalog
-    ```
     git clone GitHub *repo address(a special one without vagrant directory)* catalog
+    ```
 
 10. Create and edit wsgi file:
      ```
@@ -133,7 +139,6 @@ Procedures:
      ```
      engine = create_engine('postgresql://catalog:catalog@localhost/catalog')
      ```
-
 
 14. Create a user called catalog and grant the ownership to the user to CRUD tables in the database catalog:
      ```
