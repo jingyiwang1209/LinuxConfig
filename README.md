@@ -58,8 +58,6 @@ Procedures:
      ssh grader@52.37.81.230 -p 2200 -i /Users/*username*/.ssh/linux
      ```
 
-
-
 6. Configure the local timezone to UTC:
     go to server side:
      ```
