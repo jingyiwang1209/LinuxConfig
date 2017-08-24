@@ -24,7 +24,7 @@ Procedures:
      sudo ufw enable
      sudo ufw status
     ```
-    Also add an custom rule on GUI: custom TCP 2200]
+    Also add an custom rule on GUI: custom TCP 2200
 
 2. Download the LightsailDefaultPrivateKey file from Lightsail site into a local environment.
 
