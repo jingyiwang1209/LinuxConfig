@@ -4,7 +4,7 @@
 
 ### The URL is: http://ec2-52-37-81-230.us-west-2.compute.amazonaws.com/
 ### The IP address is: 52.37.81.230
-### SSH port range: 22
+### SSH port range: 2200
 
 Procedures:
 1. Creating an Amazon Lightsail instance and set up the firewall:
