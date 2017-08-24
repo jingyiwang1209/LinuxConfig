@@ -13,6 +13,7 @@ Procedures:
      sudo apt-get upgrade
     ```
     set and change rules:
+    ```
      sudo ufw status
      sudo ufw default deny incoming
      sudo ufw default allow outgoing
