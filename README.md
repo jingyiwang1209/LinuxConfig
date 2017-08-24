@@ -55,7 +55,7 @@ Procedures:
     copy the public key from linux.pub(cat  /Users/*username*/.ssh/linux.pub) into the above file.
     Now it is supposed to login using ssh grader:
      ```
-     ssh grader@52.37.81.230 -p 2200 -i /Users/*username*/.ssh/linux
+     ssh grader@52.37.81.230 -p 2200 -i /Users/* username */.ssh/linux
      ```
 
 6. Configure the local timezone to UTC:
