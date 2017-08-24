@@ -40,7 +40,6 @@ Procedures:
     ```
 
 5. Create a SSH key pair for grader using the ssh-keygen tool:
-    on the local side:
      ```
      mkdir linux
      cd linux
