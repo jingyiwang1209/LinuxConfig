@@ -12,6 +12,11 @@ Procedures:
     ```
      sudo apt-get upgrade
     ```
+    also install and enable system packages:
+    ```
+     sudo apt-get install unattended-upgrades
+     sudo dpkg-reconfigure --priority=low unattended-upgrades
+    ```  
     set and change rules:
     ```
      sudo ufw status
